@@ -215,6 +215,7 @@ ol.todo>li::before{content:counter(t);position:absolute;left:0;top:2px;width:25p
 .result .note strong{font-weight:700}
 .result .law{border-top:1px dashed var(--line);padding-top:8px}
 
+[hidden]{display:none!important}  /* 原頁依賴 artifact 外框的這條規則；少了它「其他」的追問區、結果區會預設展開 */
 .topbar{background:var(--bg);border-bottom:1px solid var(--line)}
 .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px}
 .topbar .logo img{display:block;height:40px;width:auto}
