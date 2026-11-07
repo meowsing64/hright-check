@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>好雇主 9 問｜3 分鐘好雇主自我檢核｜好雇 HRight</title>
+<meta name="description" content="9 題日常管理情境題，沒有標準答案，3 分鐘看見公司的好雇主指數與法定罰鍰。免費、不用登入。">
+<link rel="canonical" href="https://check.hright.tw/">
+<link rel="icon" href="https://hright.tw/wp-content/uploads/2026/11/favicon_appicon_512.png?w=64" sizes="64x64">
+<link rel="apple-touch-icon" href="https://hright.tw/wp-content/uploads/2026/11/favicon_appicon_512.png?w=180">
+<meta property="og:type" content="website">
+<meta property="og:title" content="好雇主 9 問｜3 分鐘好雇主自我檢核｜好雇 HRight">
+<meta property="og:description" content="9 題日常管理情境題，沒有標準答案，3 分鐘看見公司的好雇主指數與法定罰鍰。免費、不用登入。">
+<meta property="og:url" content="https://check.hright.tw/">
+<meta property="og:image" content="https://hright.tw/wp-content/uploads/2026/11/og_check.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HTC4FPX4W"></script>
+
+<footer class="foot"><div class="inner"><p>好雇 HRight｜當個好雇主。服務由宸星法律事務所提供。</p><p><a href="https://hright.tw/">回好雇首頁</a>・<a href="https://hright.tw/privacy/">隱私權政策</a>・<a href="https://lin.ee/IunqeGy">LINE 詢問</a></p></div></footer>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5HTC4FPX4W');</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: user-facing test build — brand band, one question column, submit → 3-second analysis overlay → result replaces the form */
+:root{
+  --bg:#f6f2e9; --surface:#ffffff; --fg:#26312f; --muted:#5d6b66; --line:#e1dccf;
+  --green:#1f4d45; --green-soft:#e3ece8; --yellow:#e7c86a; --yellow-soft:#f8eecb;
+  --mist:#8fa39b; --red:#b8442f; --red-soft:#f6e1da; --amber:#a87410; --ok:#2f7a55; --ok-soft:#e1f0e7;
+  --body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141b19; --surface:#1c2523; --fg:#e8ece9; --muted:#a3b0ab; --line:#2e3a37;
+  --green:#8cc3b4; --green-soft:#1f2f2b; --yellow:#e7c86a; --yellow-soft:#3a3320;
+  --mist:#6f857c; --red:#f08a74; --red-soft:#3d2520; --amber:#e3b04d; --ok:#6fcf9b; --ok-soft:#1d3327; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141b19; --surface:#1c2523; --fg:#e8ece9; --muted:#a3b0ab; --line:#2e3a37;
+  --green:#8cc3b4; --green-soft:#1f2f2b; --yellow:#e7c86a; --yellow-soft:#3a3320;
+  --mist:#6f857c; --red:#f08a74; --red-soft:#3d2520; --amber:#e3b04d; --ok:#6fcf9b; --ok-soft:#1d3327; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.8;margin:0}
+.inner{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{background:#1f4d45;color:#f6f2e9}
+.band .inner{padding-block:40px 36px;display:grid;gap:12px}
+.band h1{margin:0;font-size:clamp(30px,6vw,44px);font-weight:900;line-height:1.2}
+.band h1 em{font-style:normal;color:#e7c86a}
+.band p{margin:0;opacity:.9}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:#e7c86a}
+.wrap{padding-block:28px 72px;display:grid;gap:20px}
+p{margin:0}
+a{color:var(--green)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--muted)}
+.small{font-size:14px;color:var(--muted)}
+ul{margin:0;padding-left:1.3em;display:grid;gap:6px}
+.chip{font-size:12px;font-weight:700;border-radius:999px;padding:1px 9px;white-space:nowrap;display:inline-block}
+.g3{background:var(--ok-soft);color:var(--ok)}
+.g2{background:var(--green-soft);color:var(--green)}
+.g1{background:var(--yellow-soft);color:var(--amber)}
+.g0{background:var(--red-soft);color:var(--red)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.progress{position:sticky;top:0;z-index:2;background:var(--surface);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:12px;align-items:center;font-size:14px}
+.progress .track{flex:1;height:8px;background:var(--green-soft);border-radius:99px;overflow:hidden}
+.progress .fill{display:block;height:100%;width:0;background:var(--green);transition:width .3s}
+.progress .v{font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap}
+form{display:grid;padding:0 20px}
+.q{display:grid;gap:10px;padding-block:20px;border-bottom:1px solid var(--line);scroll-margin-top:60px}
+.q:last-child{border-bottom:0}
+.q .qn{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.q .qt{font-weight:700;font-size:16.5px;line-height:1.6}
+.q.miss .qn{color:var(--red)}
+.q.miss .qn::after{content:"　← 這題還沒完成"}
+.opts{display:grid;gap:8px}
+.opts label{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer;font-size:15px;background:var(--bg);line-height:1.6}
+.opts input{accent-color:var(--green);margin-top:5px;flex:none}
+.opts label:hover{border-color:var(--mist)}
+.opts label:has(input:checked){border-color:var(--green);background:var(--green-soft)}
+.opts label:focus-within,select:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+select{font:inherit;font-size:15px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);justify-self:start}
+.btn{font-family:var(--body);font-size:16px;font-weight:700;border-radius:10px;padding:12px 22px;cursor:pointer;border:0;text-decoration:none;display:inline-block}
+.btn.primary{background:var(--yellow);color:#26312f}
+.btn.ghost{background:transparent;color:var(--green);border:1px solid var(--green)}
+.btn:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.submit{padding:18px 20px 22px;border-top:1px solid var(--line);display:grid;gap:8px;justify-items:start}
+.submit .btn{width:100%;max-width:320px}
+#warn{color:var(--red);font-size:14px;min-height:1.4em}
+/* analysing overlay */
+.overlay{position:fixed;inset:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);display:grid;place-items:center;padding:16px}
+.overlay[hidden]{display:none}
+.overlay .box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px 26px;display:grid;gap:14px;justify-items:center;text-align:center;width:min(100%,380px);box-shadow:0 12px 40px rgb(0 0 0 / .12)}
+.spin{width:88px;height:88px}
+.spin .arc{transform-origin:50% 50%;animation:rot 1.1s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.overlay .msg{font-weight:700;font-size:17px;min-height:1.6em}
+.overlay .steps{display:grid;gap:4px;font-size:14px;color:var(--muted);text-align:left;justify-self:stretch}
+.overlay .steps span{opacity:.35;transition:opacity .3s}
+.overlay .steps span.on{opacity:1}
+.overlay .steps span.done::before{content:"✓ ";color:var(--ok)}
+.overlay .steps span:not(.done)::before{content:"・ "}
+@media (prefers-reduced-motion:reduce){.spin .arc{animation:none}}
+/* result */
+.result{padding:24px 20px;display:grid;gap:18px}
+.score{display:grid;gap:14px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.score .big{font-size:clamp(26px,5vw,34px);font-weight:900;line-height:1.3;color:var(--green)}
+.score .lvtext{color:var(--fg);max-width:46ch}
+.meter{position:relative;height:10px;background:var(--green-soft);border-radius:99px;margin-top:6px}
+.meter .fill{position:absolute;inset:0 auto 0 0;width:0;background:var(--green);border-radius:99px;transition:width 1.1s ease-out}
+.meter .tick{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--surface)}
+.tally{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;font-size:14px;color:var(--muted)}
+.tally b{font-size:22px;color:var(--fg);font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.meter .fill{transition:none}}
+.good{background:var(--ok-soft);border-radius:10px;padding:12px 16px;display:grid;gap:6px}
+.goodlist{display:grid;gap:4px;font-size:14.5px}
+.items{display:grid;gap:10px}
+.item{border:1px solid var(--line);border-left:5px solid var(--green);border-radius:6px;padding:12px 14px;display:grid;gap:6px;background:var(--surface)}
+.item.l1{border-left-color:var(--amber)}
+.item.l0{border-left-color:var(--red)}
+.item .top{display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}
+.item .meta{font-size:13.5px;color:var(--muted)}
+.item dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:14px}
+.item dt{color:var(--muted);white-space:nowrap}
+.item dd{margin:0;min-width:0}
+@media (max-width:420px){.item dl{grid-template-columns:1fr}.item dd{margin-bottom:4px}}
+.cta{background:#1f4d45;color:#f6f2e9;border-radius:12px;padding:18px 20px;display:grid;gap:10px}
+.cta .small{color:#d6e2dd}
+.cta ul{font-size:14.5px}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap}
+.cta .btn.ghost{color:#f6f2e9;border-color:#f6f2e9}
+.share{border:1px dashed var(--mist);border-radius:10px;padding:14px 16px;display:grid;gap:8px}
+.share textarea,.share input{font:inherit;font-size:14px;width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:var(--bg);color:var(--fg)}
+.trial{font-size:13px;color:var(--muted);text-align:center}
+.q .hint{font-size:13px;color:var(--muted)}
+.opts label.other{border-style:dashed}
+.fu{display:grid;gap:10px;border-left:3px solid var(--mist);padding:4px 0 4px 12px}
+.fuq{display:grid;gap:6px;font-size:15px}
+.opts.yn{display:flex;flex-wrap:wrap}
+.opts.yn label{padding:6px 14px}
+.item ul.miss{margin:4px 0 0;font-size:14.5px}
+.goodlist .tip{display:block;font-size:13.5px;color:var(--muted);padding-left:1.2em}
+.item .court{font-size:14px;background:var(--yellow-soft);border-radius:6px;padding:8px 10px}
+.item.lx{border-left-color:var(--mist)}
+.chip.gx{background:var(--green-soft);color:var(--muted)}
+.cta .lead{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));margin-top:4px}
+.cta .lead label{display:grid;gap:4px;font-size:14px;color:#d6e2dd}
+.cta .lead input{font:inherit;font-size:15px;padding:9px 11px;border-radius:8px;border:1px solid #8fa39b;background:#f6f2e9;color:#26312f;width:100%;box-sizing:border-box}
+.cta .lead button,.cta .lead #leadmsg{grid-column:1/-1}
+.cta .lead button{justify-self:start}
+.rsum{display:grid;gap:6px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.rsum .lvname{font-size:clamp(26px,6vw,32px);font-weight:900;color:var(--green);line-height:1.35}
+.rsum .idx{font-size:14px;color:var(--muted)}
+.rsum .idx b{font-size:20px;color:var(--fg);font-variant-numeric:tabular-nums}
+.rsec{display:grid;gap:16px}
+.rsec h3{font-size:19px;font-weight:900;color:var(--green);padding-bottom:6px;border-bottom:1px solid var(--line)}
+ol.todo{list-style:none;padding:0;margin:0;display:grid;gap:22px;counter-reset:t}
+ol.todo>li{display:grid;gap:4px;counter-increment:t;padding-left:36px;position:relative;min-width:0}
+ol.todo>li::before{content:counter(t);position:absolute;left:0;top:2px;width:25px;height:25px;border-radius:50%;background:var(--green);color:var(--surface);font-size:13px;font-weight:700;display:grid;place-items:center}
+.todo .ttl{font-weight:700;font-size:17px;line-height:1.5}
+.todo .did{font-size:14px;color:var(--muted);line-height:1.6}
+.tag{font-size:13px;font-weight:700}
+.tag.t0{color:var(--red)} .tag.t1{color:var(--amber)} .tag.t2{color:var(--green)} .tag.t3{color:var(--ok)}
+.todo .key{font-size:16px}
+.result details{border:1px solid var(--line);border-radius:6px;background:var(--bg)}
+.result summary{cursor:pointer;padding:9px 12px;font-size:15px;font-weight:700;color:var(--green);list-style:none;display:flex;gap:10px;justify-content:space-between;align-items:baseline}
+.result summary::-webkit-details-marker{display:none}
+.result summary>span:first-child::before{content:"▸ ";color:var(--amber)}
+.result details[open]>summary>span:first-child::before{content:"▾ "}
+.todo summary>span:first-child::before{content:none}
+.todo summary::before{content:"▸ ";color:var(--amber)}
+.todo details[open]>summary::before{content:"▾ "}
+.todo summary{justify-content:flex-start;gap:0}
+.result details .in{padding:2px 12px 14px;display:grid;gap:10px;font-size:15px;line-height:1.75}
+.result details .in b{display:block;font-size:13.5px;color:var(--muted)}
+.result details .in .key{font-weight:700}
+.result .law{font-size:13.5px;color:var(--muted)}
+.result .court{font-size:14px;background:var(--yellow-soft);border-radius:6px;padding:8px 10px}
+.result .in ul.miss{margin:4px 0 0;padding-left:1.2em}
+.rows{display:grid;gap:8px}
+.advice{border:2px solid var(--yellow);border-radius:10px;padding:14px 16px;display:grid;gap:4px;background:var(--surface)}
+.advice .who{font-size:14px;font-weight:700;color:var(--muted)}
+.advice p{font-size:16px}
+.cta .ctat{font-size:clamp(19px,4vw,22px);line-height:1.5}
+.fireline{font-size:15px;color:var(--muted)}
+.fireline a{color:var(--green);font-weight:700}
+.sharebox .in textarea{font:inherit;font-size:14px;width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:var(--surface);color:var(--fg)}
+.rfoot{display:grid;gap:10px;justify-items:start}
+.result{gap:30px}
+.fire{border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:8px;background:var(--surface)}
+.fire .row{display:flex;gap:10px;flex-wrap:wrap}
+/* v6b: four answer pages, interviewer avatar, size card, structured explanations */
+.progress .pg{font-weight:700;color:var(--green);white-space:nowrap}
+.page{display:grid}
+.page[hidden]{display:none}
+.ask{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;padding-top:22px}
+.av{width:48px;height:48px;border-radius:50%;border:2px solid var(--yellow);box-sizing:border-box;object-fit:cover;object-position:50% 20%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-weight:900;font-size:17px}
+.ask .chap{display:block;font-size:13px;font-weight:700;color:var(--green)}
+.ask p{font-size:17px;font-weight:700;line-height:1.55}
+.opts.sizes{grid-template-columns:1fr 1fr}
+.opts.sizes label{justify-content:center;align-items:center;padding:10px 8px}
+.opts.sizes input{margin-top:0}
+.sizecard{background:var(--yellow-soft);border-radius:10px;padding:14px 16px;display:grid;gap:6px;font-size:15px;line-height:1.75}
+.sizecard b{font-size:16px}
+.sizecard .src{font-size:13px;color:var(--muted)}
+.nav{padding:18px 20px 22px;border-top:1px solid var(--line);display:grid;gap:8px}
+.nav .row{display:flex;gap:10px}
+.nav .btn{flex:1}
+.nav .btn.ghost[hidden]{display:none}
+.result .in .keyline{font-size:17px;font-weight:700;line-height:1.55}
+.todo .key{font-size:17px;font-weight:700;line-height:1.55}
+.result .in .blk{display:grid;gap:4px}
+.result .in .blk>b{display:block;font-size:13.5px;color:var(--muted)}
+.result ul.chk,.result ul.qs{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.result ul.chk li{padding-left:1.4em;text-indent:-1.4em}
+.result ul.qs li{padding-left:1.4em;text-indent:-1.4em}
+.result ul.chk li::before{content:"✓ ";color:var(--ok);font-weight:700}
+.result ul.qs li::before{content:"□ ";color:var(--muted)}
+.result .note{background:var(--yellow-soft);border-radius:8px;padding:10px 12px;display:grid;gap:2px}
+.result .note>b{font-size:13.5px;color:var(--amber)}
+.result .note strong{font-weight:700}
+.result .law{border-top:1px dashed var(--line);padding-top:8px}
+
+.topbar{background:var(--bg);border-bottom:1px solid var(--line)}
+.topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px}
+.topbar .logo img{display:block;height:40px;width:auto}
+.topbar nav{display:flex;gap:16px;align-items:center;font-size:15px}
+.topbar nav a{color:var(--fg);text-decoration:none;font-weight:500}
+.topbar nav a.cta{background:var(--yellow);color:var(--fg);padding:8px 16px;border-radius:999px;font-weight:700}
+@media (max-width:520px){.topbar nav a:not(.cta){display:none}}
+.foot{border-top:1px solid var(--line);padding:24px 20px 40px;font-size:13.5px;color:var(--muted);text-align:center}
+.foot p{margin:4px 0}.foot a{color:var(--green)}
+</style>
+</head>
+<body>
+
+
+<header class="topbar"><div class="inner"><a href="https://hright.tw/?utm_source=check&utm_medium=topbar" class="logo"><img src="https://hright.tw/wp-content/uploads/2026/10/logo_header_480w_transparent.png" alt="好雇 HRight" height="40"></a><nav><a href="https://hright.tw/articles/">知識文章</a><a href="https://hright.tw/service/">服務</a><a href="https://booking.ms851.com/?utm_source=check&utm_medium=topbar" class="cta">預約諮詢</a></nav></div></header>
+<div class="band">
+  <div class="inner">
+    <span class="kicker">好雇 HRight　好雇主自我檢核</span>
+    <h1>好雇主 <em>9</em> 問</h1>
+    <p>9 個日常管理情境，選最接近你們公司現在的做法。勞動法沒有百分之百安全的做法，所以沒有標準答案，也沒有公司能拿滿分。送出後看你們的好雇主指數，以及每一題還可以怎麼做得更穩。約 3 分鐘，不用登入。</p>
+  </div>
+</div>
+
+<div class="inner wrap">
+  <div class="panel" id="quiz">
+    <div class="progress"><span class="pg" id="pg">第 1／4 頁・開場</span><span class="track" aria-hidden="true"><span class="fill" id="pfill"></span></span><span class="v" id="pval" aria-hidden="true">0 / 10</span></div>
+    <form id="f" novalidate></form>
+    <div class="nav">
+      <div class="row">
+        <button class="btn ghost" type="button" id="prev" hidden>上一頁</button>
+        <button class="btn primary" type="button" id="go">開始作答 →</button>
+      </div>
+      <span id="warn" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="panel" id="resultPanel" hidden><div class="result" id="out" aria-live="polite"></div></div>
+  <p class="trial">留下的資料只用來寄送報告與必要時聯繫您；作答內容會保存用於統計分析，不提供第三方。詳見 <a href="https://hright.tw/privacy/" target="_blank" rel="noopener">好雇隱私權政策</a>。</p>
+</div>
+
+<div class="overlay" id="ov" hidden role="status" aria-live="polite">
+  <div class="box">
+    <svg class="spin" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="var(--green-soft)" stroke-width="9"/><circle class="arc" cx="50" cy="50" r="40" fill="none" stroke="var(--green)" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 252"/></svg>
+    <span class="msg" id="ovmsg">正在分析中…</span>
+    <div class="steps" id="ovsteps"><span>整理你的 9 題作答</span><span>對照勞基法與勞動部函釋</span><span>比對臺北市 4,317 件勞檢裁罰</span><span>計算你的好雇主指數</span></div>
+  </div>
+</div>
+
+<script>
+const SRC_URL='https://data.gov.tw/dataset/121435';
+const BOOK="https://booking.ms851.com/?utm_source=hright&utm_medium=check&utm_campaign=%E5%A5%BD%E9%9B%87%E4%B8%BB9%E5%95%8F";
+const LINE="https://lin.ee/IunqeGy";
+const SHARE_URL="check.hright.tw";
+const LEAD_URL="https://ms851.com/wp-json/hright/v1/lead";
+// the WordPress build shows 施律師's photo; local and artifact previews block outside images, so they get a placeholder circle
+const AVATAR=/(^|\.)ms851\.com$/.test(location.hostname)?"https://ms851.com/wp-content/uploads/2026/10/about-lawyer-shih-yuchen-crop2.jpg":"";
+const GL=["風險較高","需要調整","可行做法","相對穩健"];
+const OTHER="其他做法（不在上面的選項裡）";
+
+// each question: t, short, law, fine, data, give, keep, why, sv, tip (for grade 3), court, multi, o:[[label, grade, note, {give,why} override]]
+const Q=[
+ {id:"q1",short:"出勤紀錄",multi:true,
+  fu:[["每天的上下班時間都有記到分鐘（含下班時間）？","沒有逐日記到分鐘，就是臺北市第 4 常罰的「出勤紀錄未記載至分鐘」。"],["紀錄能保存 5 年，事後修改會留下痕跡？","保存不到 5 年或可以任意修改，爭議時紀錄的可信度會被質疑，舉證責任落在公司。"],["同仁要求時，能提供他的出勤紀錄副本？","勞基法規定勞工申請出勤紀錄副本或影本時，雇主不得拒絕。"]],t:"同仁每天上下班的時間，公司手上有什麼紀錄？（可複選）",law:"勞基法第 30 條第 5、6 項；勞動事件法第 35、36、38 條",fine:"未置備 9 萬～45 萬元；未記到分鐘 2 萬～100 萬元",data:"未記到分鐘：臺北市排名第 4，占 15.1%",
+  give:"每天的上下班時間都要記到分鐘、保存 5 年，員工要求時要給副本。",keep:"外勤、遠端、責任制主管各自適合哪種記錄方式？完整記錄上路後，紀錄會反過來證明過去的加班，「新制上路前的差額」要怎麼盤點與處理？",why:"工資請求權有 5 年。先改制度還是先處理過去差額，順序不同，風險差很多；順序一旦弄反，等於替員工準備好請求的證據。",sv:["inspect","plan"],
+  tip:"外勤、忘記打卡的補登流程要留紀錄；補登太隨意，紀錄的可信度一樣會被質疑。",
+  o:[["打卡機、App（含外勤定位打卡）或門禁系統自動記錄",3,"自動記錄最容易做到逐日記到分鐘、保存 5 年。"],["同仁每天在群組或表單回報上下班時間",2,"可以，但要記到分鐘、包含下班時間、能保存 5 年，事後不能隨意修改。回報制最常見的破口是「紀錄和實際工時對不上」：勞動事件法規定出勤紀錄上的時間推定為工作時間，紀錄一旦失真，要舉反證的是公司。"],["紙本簽到表，主管簽核",2,"可以，常見問題是只簽到不簽退、只寫整點，或沒有保存完整。整點簽退在勞檢時常被認定「未逐日記載至分鐘」，正是臺北市第 4 常罰的項目。"],["只記請假，正常上班不另外記",0,"勞檢會直接要求出勤紀錄；沒有紀錄，罰鍰從 9 萬元起。更大的風險在勞資爭議：雇主對出勤紀錄有「文書提出義務」，拿不出來，法院可以直接採信員工自己整理的工時計算加班費。"]]},
+ {id:"q2",short:"加班費約定",
+  fu:[["薪資單或契約有寫明哪一筆是加班費（或對應幾小時）？","沒有拆出加班費的金額或時數，法院常把整筆薪資當成本薪，加班費要另外再算。"],["實際加班超過約定時數時，會另外結算補發？","超過的部分沒有結算，差額就是加班費未足額，員工離職時可以一次請求。"],["算加班費的時薪，有把伙食、職務等固定津貼算進去？","固定津貼若屬經常性給與，漏算進時薪，加班費一樣不足額。"]],t:"業務或主管的薪水裡，加班費是怎麼約定的？",law:"勞基法第 24 條第 1 項、第 84-1 條",fine:"2 萬～100 萬元",data:"臺北市排名第 1，占 21.1%",
+  give:"加班費依實際時數加給：前 2 小時至少加 1/3，再 2 小時至少加 2/3。想用固定金額預付，要用「薪資總括制」的寫法：寫明預付時數與金額、定期結算、不足補發。",keep:"薪資結構要怎麼寫進契約，預付加班費才站得住？主管的職稱和實際權限，能不能走責任制核備？已經簽的契約要怎麼轉換，才不會被認為是變更勞動條件或變相減薪？",why:"加班費是員工離職時最常一起請求的項目。薪資總括制是勞檢與訴訟的高爭議區，契約、薪資單、結算紀錄要一起設計，差一句寫法結果可能完全相反。",sv:["contract","plan"],
+  o:[["加班另外按實際時數計算",2,"最單純，但加班費的「計算基礎」常被低估：伙食、職務、全勤等固定津貼若屬經常性給與，也要算進時薪；漏算一樣是加班費未足額。"],["每月預付固定加班費，定期依實際時數結算，不足補發",2,"這就是所謂的「薪資總括制」（預付加班費），操作得宜是合法的。法院審查的是：加班費金額與對應時數有沒有拆開寫明、是否不低於法定標準、超過的部分有沒有結算補發；少一項，預付的錢常被認定為一般薪資，加班費要另外再付。"],["月薪已含加班費，沒有約定時數，也沒有另外結算",1,"這是對「薪資總括制」最常見的誤解：以為談好「月薪含加班」就成立。沒有拆出加班費金額與時數，法院會把整筆月薪當成本薪，再用這個較高的時薪重算加班費，付兩次、而且算得更貴。"],["主管職不另外算加班",1,"常見的誤區是「有主管職稱就是責任制」。勞基法第 84-1 條要同時符合：屬勞動部公告的監督管理人員（看實際權限）、書面約定、報地方主管機關核備；缺一項，主管一樣適用一般加班規定。"]]},
+ {id:"q3",short:"加班申請制",t:"出勤紀錄顯示，有同仁常比下班時間晚 1 小時才打卡，但沒有申請加班。公司通常怎麼處理？",law:"勞動事件法第 38 條、勞基法第 24 條第 1 項",fine:"2 萬～100 萬元",data:"臺北市排名第 1，占 21.1%",
+  give:"出勤紀錄上的時間，會被推定是經雇主同意的工作時間。可以採加班申請制，但看到超時的紀錄要主動處理，並留下是不是工作的紀錄。",keep:"加班申請流程、主管確認方式、非工作原因的註記格式，要怎麼設計才實際用得起來？",why:"只有申請制、沒有後續處理，到勞資爭議時多半擋不住加班費請求。申請制能不能擋住請求，關鍵在有沒有推翻推定的紀錄；確認流程要寫進工作規則才有效力。",sv:["inspect","contract","plan"],
+  o:[["主管主動詢問：是工作就補申請；不是工作，請同仁註記原因",2,"兼顧申請制和出勤紀錄，是目前最穩的方向。但「不是工作」的註記如果流於形式或由主管代填，爭議時會被質疑；註記格式和覆核方式是成敗關鍵。"],["依打卡時間一律計算加班費",2,"最安全，但成本高，也可能鼓勵同仁晚打卡。可以改用「事前申請＋超時事後確認」的雙軌制：保留出勤紀錄的完整性，又能合法排除非工作的滯留時間，把加班成本控制住。",{why:"照打卡全額給付最安全，但加班成本會一路墊高；雙軌制的確認流程和註記格式設計得當，才能真正排除非工作時間。"}],["公司規定加班要事先申請，沒申請就不給",1,"出勤紀錄上的時間推定是經雇主同意的工作時間；要推翻這個推定，公司必須提出「反證」。「規定要事先申請」本身不是反證，要有當時的確認紀錄。"],["請同仁時間到先打卡下班，再處理手邊工作",0,"出勤紀錄和實際工時不一致，勞檢或爭議時都對公司不利。員工只要留下下班後的訊息、郵件或檔案修改時間，就能推翻打卡紀錄，公司反而要解釋紀錄為什麼不實。"]]},
+ {id:"q4",short:"旺季排班",t:"旺季人手不夠時，你們通常怎麼排班？",law:"勞基法第 30 條、第 30-1 條、第 36 條",fine:"2 萬～100 萬元",data:"例假休息日：臺北市排名第 2，占 17.8%",
+  give:"每 7 天要有 1 天例假、1 天休息日。要彈性排班，可以用變形工時，但要先經工會或勞資會議同意，且部分變形只限指定行業。",keep:"你們的行業在不在 4 週、8 週變形的指定清單內？勞資會議怎麼開、決議怎麼寫、排班表怎麼公告？",why:"變形工時程序沒做，排班再合理也一樣違法。",sv:["inspect","plan","advisor"],
+  tip:"休息日加班的時數也會算進每月 46 小時的延長工時上限，旺季要一起控管。",
+  o:[["每週照樣休 2 天；需要時請同仁休息日來加班，依休息日標準給薪",3,"例假不動、休息日加班照規定給薪，是最穩的做法。"],["經勞資會議同意，採 2 週或 4 週變形工時，排班表事先公告",2,"可行。變形工時分 2 週、4 週、8 週三種，適用行業、每日上限、例假排法各不相同；常見的錯誤是行業不符卻用 4 週變形，或勞資會議決議沒有涵蓋實際排班的部門。"],["旺季每週只排休 1 天",1,"沒有變形工時時，高度可能違法：另一天必須是休息日並依休息日給薪。關鍵在區分「例假」和「休息日」：例假出勤除天災、事變等法定例外外一律違法，事後給加班費也補不回來。"],["旺季連續上班，淡季再一次補休",0,"例假不能累積到淡季再補，這是臺北市勞檢第 2 常罰的項目。例假屬強制規定，同仁簽同意書、事後補休或加發工資都不能取代。"]]},
+ {id:"q5",short:"下班後交辦",t:"下班後，主管用 LINE 交辦工作或詢問進度，你們怎麼處理？",law:"勞基法第 24 條第 1 項、第 30 條",fine:"2 萬～100 萬元",data:"加班費：臺北市排名第 1，占 21.1%",
+  give:"下班後依雇主指示處理的工作，原則上屬於工作時間。最好訂出下班交辦的規則和加班申報方式。",keep:"哪些職務真的需要下班後聯繫？要用待命津貼、輪值制，還是加班申報處理？申報方式怎麼設計，才不會變成形式？",why:"LINE 對話會留下時間紀錄，員工主張加班時很容易舉證。",sv:["contract","plan"],
+  o:[["非緊急不在下班後交辦；緊急交辦的處理時間記為加班",2,"有規則、有紀錄，是目前最穩的方向。但「緊急」怎麼定義、誰可以交辦，沒寫清楚的話，規則很快會被例外架空。"],["可以交辦，同仁事後自己申報加班時數",2,"可行，但要有簡單的申報方式，主管也要實際核准。申報制的關鍵是「核准紀錄」和「申報期限」；沒有期限，同仁可以在離職時一次回溯申報整年度的訊息時數。"],["回個訊息不算工作，不另外計算",1,"雇主指示的工作，即使在家用手機處理，也可能被認定為工作時間。判斷重點不是時間長短，而是有沒有依指示提供勞務；被要求回覆、修改文件，就可能構成工作時間，和「待命時間」的認定也不同。"],["沒有特別規定，看各主管習慣",1,"沒有規則時，對話紀錄就成為員工請求加班費的證據；各主管標準不一，也容易引發同仁間的不公平感，演變成集體爭議。"]]},
+ {id:"q6",short:"遲到規定",t:"公司對遲到的規定，比較接近哪一種？",law:"勞基法第 22 條第 2 項、勞工請假規則第 9 條",fine:"2 萬～100 萬元",data:"臺北市排名第 3，占 17.2%",
+  give:"遲到只能依實際時間比例扣薪；要懲處，依工作規則處理，不從薪水扣罰款。",keep:"工作規則的遲到、全勤、考績、懲處四套規則要怎麼拆開設計，才不會互相牴觸？已經多扣的要不要補？",why:"多扣的錢員工離職時可以一次要回來，勞檢也很容易從工資清冊看出來。",sv:["contract","plan"],
+  tip:"扣薪比例要寫進工作規則；同仁用請假抵遲到時，假別規則也要對得上。",
+  o:[["依實際遲到的分鐘數扣薪",3,"勞動部函釋：可以依遲到時間比例扣發工資。"],["遲到不扣薪，反映在全勤獎金和考績",2,"可以，但婚假、喪假、公傷病假、公假，以及性別平等工作法的假別，不能影響全勤獎金。另外，按月固定發放的全勤獎金可能被認定為「經常性給與」而屬於工資，會影響平均工資、資遣費與退休金的計算。",{give:"全勤獎金的扣發條件寫進工作規則，並排除法律保護的假別。",why:"條件寫得太寬，扣全勤本身就可能違法；全勤獎金的工資屬性，也會牽動資遣費與退休金。"}],["以 15 或 30 分鐘為單位扣薪，不足一單位以一單位計",1,"扣超過實際遲到時間的部分，等於工資沒有全額給付。很多公司的工作規則都這樣寫，卻是勞檢從工資清冊最容易抓到的項目：勞動部函釋要求依實際遲到時間比例扣薪。"],["遲到累計 3 次，記曠職半天並扣半天薪水",0,"有上班的時間被當成曠職扣薪，會被認定工資未全額給付。如果再以累計的「曠職」為由解僱，解僱本身也可能被認定違法。"]]},
+ {id:"q7",short:"特休安排",t:"同仁的特休，平常怎麼安排？",law:"勞基法第 38 條第 2、4 項",fine:"2 萬～100 萬元",data:"未休未發工資：臺北市排名第 9，占 6.0%",
+  give:"特休日期原則上由同仁自己排；年度結束沒休完要發工資，或雙方同意遞延一年。每年要書面通知。",keep:"春節前後、公司公休想統一休假，有沒有合法的做法？週年制改曆年制時，跨年度的天數怎麼按比例計算？遞延的特休隔年又沒休完，怎麼結算？",why:"雇主要負責證明已經給足或付清；統一排定若不被承認，等於特休還沒休。",sv:["contract","advisor"],
+  tip:"每年要書面通知未休日數與發給的工資；遞延的天數隔年還沒休完，一樣要結算。",
+  o:[["同仁自己排，年底沒休完折算工資或約定遞延",3,"符合法律原則，也最好舉證。"],["公司公休或春節時，和同仁協商後使用特休",2,"可行，關鍵是協商並留下同意紀錄。也可以改用公司給薪的「公司公休」；兩種做法在成本和彈性上各有利弊，選錯了年底一樣要結算特休工資。"],["公司年初統一指定特休日期",1,"特休原則上由同仁排定，公司單方指定容易被認定違法。特休的「排定權」在勞工；公司排定的日子不被承認，年底仍要依未休日數發工資，等於付兩次。"],["沒休完就歸零",0,"臺北市勞檢第 9 常罰的項目。除了罰鍰，同仁離職時還能一併請求 5 年內的未休特休工資。"]]},
+ {id:"q8",short:"資遣與績效",
+  fu:[["有書面的考核紀錄，寫明具體沒達成的目標？","沒有書面考核紀錄，「不能勝任」很難舉證。"],["資遣前給過明確的改善期間與輔導，並留下紀錄？","沒有給過改善機會，資遣很難通過「解僱最後手段性」的檢驗。"],["資遣前評估過能否調任其他職缺？","最高法院 105 年度台上字第 1184 號也審酌公司有沒有留給同仁申請轉調的期間。"]],t:"有同仁長期表現不佳，公司通常怎麼處理？",law:"勞基法第 11 條第 5 款、第 14 條、第 16、17 條；就業服務法第 33 條",fine:"違法資遣沒有罰鍰，代價是恢復僱傭與補發工資；未依規定給資遣費 30 萬～150 萬元；未於 10 日前資遣通報 3 萬～15 萬元",data:"勞動事件法第 49 條：訴訟期間員工可以聲請定暫時狀態處分，要求公司繼續僱用",
+  court:"最高法院 105 年度台上字第 1184 號：公司有 PIP 制度，但其中兩位同仁進入 PIP 的條件是否符合、改善計畫有沒有依公司自己的規定跑完都有疑問，最高法院就把這兩人的部分廢棄發回；另外三位完整跑完 PIP 仍未改善，資遣被認定合法。",
+  give:"資遣要合法，先要符合勞基法第 11 條的法定事由，而且是最後手段；付資遣費、給預告期間只是程序，不能補正事由。以「不能勝任工作」為由，法院會看公司有沒有給過明確目標與改善機會。",keep:"你們的考核制度能不能支撐「不能勝任」？PIP 的進入條件、目標、期間、輔導紀錄怎麼設計？協議離職書要寫哪些條款，才不會事後被主張受脅迫？",why:"違法資遣的代價不是罰單，而是員工訴請確認僱傭關係存在、補發解僱期間的工資；員工還可以聲請定暫時狀態處分，訴訟期間公司就要讓他回來上班並發薪。",sv:["exit","contract"],
+  o:[["先訂績效改善計畫（PIP）：明確目標、改善期間與輔導紀錄，未改善才評估資遣",2,"方向正確，但 PIP 要照公司自己訂的規則走完：進入條件、期間、次數少一項，最高法院也曾廢棄發回。資遣前還要確認有沒有其他職缺可以調任，才符合「解僱最後手段性」。"],["和同仁協商合意離職，談好補償並簽離職協議",2,"通常是爭議最少的方式，但協議書的寫法很關鍵：離職原因怎麼寫、要不要開非自願離職證明、拋棄其他請求的條款，處理不好事後仍可能翻案。"],["主管提醒過幾次沒改善，就以「不能勝任工作」資遣，資遣費和預告工資照付",0,"這是最常見的誤解：以為付了資遣費、給了預告期間就合法。資遣合不合法，關鍵在有沒有法定事由；沒有考核紀錄與改善機會，「不能勝任」很難成立，資遣費付了，解僱一樣可能無效。"],["調到其他職務或調降薪資，讓同仁自己決定要不要留下",0,"調職要符合調動五原則，片面減薪通常違法；同仁反而可以依勞基法第 14 條不經預告終止契約，並向公司請求資遣費。"]]},
+ {id:"q9",short:"申訴管道",t:"如果同仁覺得被主管言語霸凌，他會怎麼反映？",law:"性別平等工作法第 13 條、職業安全衛生法第 22-1 條",fine:"依人數 1 萬～75 萬元不等，多數須限期改善未改善才罰",data:"2026-07-01 起職場霸凌防治新制上路",
+  give:"10 人以上要設性騷擾和職場霸凌的申訴管道並公開揭示；30 人以上另訂防治措施、申訴及懲處規範。",keep:"申訴進來誰受理、誰調查？被申訴的是主管或老闆時怎麼處理？",why:"2026-07-01 起霸凌申訴要依準則處理，調查程序有重大瑕疵，主管機關可以要求重新調查。霸凌調查最常出問題的是程序：通知、陳述意見、迴避、調查報告的寫法，任一環節有瑕疵，結論都可能被推翻。",sv:["bully","contract"],
+  tip:"被申訴的是老闆或高階主管時，誰來調查？建議預先指定外部專家。",
+  o:[["寫在公告或手冊上的申訴信箱、專線，並有處理流程",3,"同時做到公開管道和處理流程。"],["直接找人資或老闆",1,"10 人以上要有公開揭示的申訴管道；只靠口頭找人，事後很難證明公司有提供管道。被申訴的就是老闆或高階主管時，內部沒有人能中立調查，實務上會委由外部專家組成調查小組。"],["先跟自己的主管反映",0,"霸凌常常就是主管本人，向主管申訴等於沒有管道；同仁不敢申訴，事件常直接升級成勞資爭議或網路爆料。"],["公司還沒想過這個問題",0,"新規定已經上路，建議先從申訴管道開始。最低限度要有三件事：公開的申訴管道、受理與調查流程、調查人員的迴避機制。"]]}
+];
+const SV={inspect:"勞檢輔導：先看出勤與薪資紀錄，把勞檢會抽查的地方補好",plan:"改善建議：排出先改哪幾項，過去的差額怎麼處理",advisor:"顧問服務：日常問題有固定的律師可以問，制度調整一路陪到上線",contract:"勞動契約、工作規則審閱：把加班、遲到、特休、懲處條款改成站得住的寫法",bully:"職場霸凌外部專家：先列入名冊，有申訴才啟動調查；也可安排內訓",exit:"資遣與績效管理顧問：資遣前評估事由、設計績效改善計畫（PIP）、擬定協議離職書"};
+const SIZES=["1–9 人","10–29 人","30–49 人","50–99 人","100–199 人","200 人以上"];
+// legal tiers by headcount: 0 = under 10, 1 = 10–29, 2 = 30–99, 3 = 100 and up
+const TIER=[0,1,2,2,3,3];
+const SIZE_CARD=[
+ ["未滿 10 人，這些規範已經適用","性騷擾、職場霸凌都要採取適當、必要的防治措施；職場暴力的預防措施要作成紀錄、留存 3 年。到 10 人，就要訂申訴管道並公開揭示。","性別平等工作法第 13 條、職業安全衛生法第 22-1 條、職業安全衛生設施規則第 324-3 條"],
+ ["10 人以上，這些規範已經適用","性騷擾、職場霸凌都要訂定申訴管道，並在工作場所公開揭示；職場暴力的預防措施要作成紀錄、留存 3 年。到 30 人，還要訂防治措施、申訴及懲處規範，工作規則也要報主管機關核備。","性別平等工作法第 13 條、職業安全衛生法第 22-1 條、職業安全衛生設施規則第 324-3 條"],
+ ["30 人以上，這些規範已經適用","性騷擾、職場霸凌都要訂定防治措施、申訴及懲處規範並公開揭示；工作規則也要報主管機關核備。到 100 人，還要訂書面的不法侵害預防計畫。","性別平等工作法第 13 條、職業安全衛生法第 22-1 條、勞基法第 70 條"],
+ ["100 人以上，這些規範已經適用","性騷擾、職場霸凌都要訂定防治措施、申訴及懲處規範並公開揭示；工作規則要報主管機關核備；另外要訂書面的「執行職務遭受不法侵害預防計畫」。","性別平等工作法第 13 條、職業安全衛生法第 22-1 條、勞基法第 70 條、職業安全衛生設施規則第 324-3 條第 2 項"]
+];
+// answer pages after the opening headcount page: [section name, interviewer line, question ids]
+const PAGES=[
+ ["出勤與加班","謝謝！先從出勤與加班聊起，這一段有 4 題。",["q1","q3","q5","q2"]],
+ ["排班、休假與扣薪","出勤與加班聊完了，接下來 3 題聊排班、休假與扣薪。",["q4","q7","q6"]],
+ ["人事與職場","最後 2 題，聊聊人事與職場。",["q8","q9"]]
+];
+const NPAGE=PAGES.length+1;
+// 申訴管道 (q9) by tier: 目標 text, and for under 10 people 「直接找人資或老闆」 becomes a workable practice
+const Q9_GIVE=[
+ "未滿 10 人，法律要求採取適當、必要的防治措施；職場暴力的預防措施要作成紀錄、留存 3 年；人數到 10 人，就要設申訴管道並公開揭示。",
+ "設性騷擾和職場霸凌的申訴管道，並公開揭示；人數到 30 人，另訂防治措施、申訴及懲處規範。",
+ "訂定性騷擾、職場霸凌的防治措施、申訴及懲處規範，並公開揭示；工作規則報主管機關核備。",
+ "訂定防治措施、申訴及懲處規範，並公開揭示；工作規則報主管機關核備；另訂書面的「執行職務遭受不法侵害預防計畫」。"
+];
+const Q9_SMALL={g:2,k:"未滿 10 人可以直接反映，但老闆被申訴時要有中立的做法。",n:"法律沒有要求未滿 10 人的公司公開揭示申訴管道，同仁直接找人資或老闆反映是可行的做法。但被申訴的就是老闆時，內部沒有人能中立處理；最好事先想好可以請誰協助調查，例如外部專家。"};
+const LEVELS=[[80,"好雇主","勞檢常查的地方，你們大多用了相對穩健的做法。勞動法沒有百分之百安全的做法，剩下的提醒是讓制度更完整的機會。"],[65,"差一點就是好雇主","大部分做法都很穩，剩下幾項調整一下就更安心。"],[50,"正在成為好雇主","已經有好的基礎。願意花 3 分鐘檢查，本身就是好雇主會做的事。"],[0,"好雇主的起點","很多公司在規模變大之前，都還沒時間整理這些，現在開始剛好。"]];
+const TOTAL=Q.length+1;
+const YN=["是","否","不確定"];
+
+// options shown in shuffled order so the best practice is not always first; value keeps the original index; 其他 stays last
+const shuffle=a=>{const b=a.map((x,i)=>[x,i]);for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b};
+
+const f=document.getElementById('f');
+const QID=Object.fromEntries(Q.map(q=>[q.id,q]));
+const avatar=()=>AVATAR?`<img class="av" src="${AVATAR}" alt="施宇宸律師" width="48" height="48">`:`<span class="av" aria-hidden="true">施</span>`;
+const askLine=(chap,line)=>`<div class="ask">${avatar()}<div><span class="chap">${chap}</span><p>${line}</p></div></div>`;
+const qHtml=(q,i,n)=>{const type=q.multi?"checkbox":"radio";
+  return `<div class="q" id="w_${q.id}"><span class="qn">${i+1} / ${n}</span><span class="qt" id="t_${q.id}">${q.t}</span><div class="opts" role="${q.multi?"group":"radiogroup"}" aria-labelledby="t_${q.id}">${shuffle(q.o).map(([[l],j])=>`<label><input type="${type}" name="${q.id}" value="${j}">${l}</label>`).join("")}${q.fu?`<label class="other"><input type="${type}" name="${q.id}" value="x">${OTHER}</label>`:""}</div>${q.fu?`<div class="fu" id="${q.id}_fu" hidden><span class="hint">再回答 3 個小問題，就能幫你們的做法評分：</span>${q.fu.map(([t],k)=>`<div class="fuq"><span id="t_${q.id}_f${k}">${t}</span><div class="opts yn" role="radiogroup" aria-labelledby="t_${q.id}_f${k}">${YN.map((y,v)=>`<label><input type="radio" name="${q.id}_f${k}" value="${v}">${y}</label>`).join("")}</div></div>`).join("")}</div>`:""}</div>`};
+f.innerHTML=`<div class="page" id="p0">${askLine("開場","先認識一下貴公司。目前有幾位同仁？")}<div class="q" id="w_size" role="radiogroup" aria-label="公司目前有幾位同仁"><div class="opts sizes">${SIZES.map((s,i)=>`<label><input type="radio" name="size" value="${i}">${s}</label>`).join("")}</div><div class="sizecard" id="sizecard" aria-live="polite" hidden></div></div></div>`
+ +PAGES.map(([chap,line,ids],p)=>`<div class="page" id="p${p+1}" hidden>${askLine(chap,line)}${ids.map((id,i)=>qHtml(QID[id],i,ids.length)).join("")}</div>`).join("");
+
+const checked=id=>[...f.querySelectorAll(`input[name=${id}]:checked`)].map(el=>el.value);
+const sizeVal=()=>{const v=checked("size");return v.length?+v[0]:-1};
+// a question with 其他 checked also needs its three follow-ups answered
+const fuDone=q=>!q.fu||!checked(q.id).includes("x")||q.fu.every((_,k)=>checked(`${q.id}_f${k}`).length);
+const pageIds=p=>p===0?["size"]:PAGES[p-1][2];
+const missingIn=ids=>ids.filter(id=>id==="size"?sizeVal()<0:(!checked(id).length||!fuDone(QID[id])));
+const missing=()=>missingIn(["size",...Q.map(q=>q.id)]);
+let page=0;
+function updateProgress(){
+  const done=TOTAL-missing().length;
+  document.getElementById('pfill').style.width=(done/TOTAL*100)+"%";
+  document.getElementById('pval').textContent=`${done} / ${TOTAL}`;
+}
+function showPage(p){
+  page=p;
+  for(let i=0;i<NPAGE;i++)document.getElementById('p'+i).hidden=i!==p;
+  document.getElementById('pg').textContent=`第 ${p+1}／${NPAGE} 頁・${p?PAGES[p-1][0]:"開場"}`;
+  document.getElementById('prev').hidden=p===0;
+  document.getElementById('go').textContent=p===0?"開始作答 →":p===NPAGE-1?"送出，看我的好雇主指數":"下一頁 →";
+  document.getElementById('warn').textContent="";
+}
+function showSizeCard(){
+  const s=sizeVal(),card=document.getElementById('sizecard');
+  if(s<0){card.hidden=true;return}
+  const [t,b,src]=SIZE_CARD[TIER[s]];
+  card.innerHTML=`<b>${t}</b><span>${b}</span><span class="src">依據：${src}</span><span class="src">人數不影響題目，會讓結果頁的建議更貼近貴公司。</span>`;
+  card.hidden=false;
+}
+f.addEventListener('change',e=>{
+  const w=e.target.closest('.q');if(w)w.classList.remove('miss');
+  if(e.target.name==="size")showSizeCard();
+  Q.filter(q=>q.fu).forEach(q=>{document.getElementById(q.id+'_fu').hidden=!checked(q.id).includes("x")});
+  updateProgress();
+  if(!missingIn(pageIds(page)).length)document.getElementById('warn').textContent="";
+});
+const toQuizTop=()=>document.getElementById('quiz').scrollIntoView({behavior:"smooth",block:"start"});
+document.getElementById('prev').addEventListener('click',()=>{if(page>0){showPage(page-1);toQuizTop()}});
+
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function analyse(){
+  const ov=document.getElementById('ov'),msg=document.getElementById('ovmsg'),steps=[...document.querySelectorAll('#ovsteps span')];
+  const texts=["正在分析中…","對照法規與函釋…","比對勞檢裁罰資料…","你的好雇主指數是…"];
+  steps.forEach(s=>s.className="");ov.hidden=false;
+  for(let i=0;i<steps.length;i++){
+    msg.textContent=texts[i];steps[i].classList.add('on');
+    await sleep(750);
+    steps[i].classList.add('done');
+  }
+  await sleep(200);
+  ov.hidden=true;
+}
+
+document.getElementById('go').addEventListener('click',async()=>{
+  const miss=missingIn(pageIds(page));
+  if(miss.length){
+    miss.forEach(id=>document.getElementById('w_'+id).classList.add('miss'));
+    document.getElementById('warn').textContent=page===0?"請先選擇公司人數。":`這一頁還有 ${miss.length} 題沒完成，已用紅字標出。`;
+    document.getElementById('w_'+miss[0]).scrollIntoView({behavior:"smooth",block:"start"});
+    return;
+  }
+  if(page<NPAGE-1){showPage(page+1);toQuizTop();return}
+  await analyse();
+  render();
+  document.getElementById('quiz').hidden=true;
+  document.getElementById('resultPanel').hidden=false;
+  window.scrollTo({top:0,behavior:"smooth"});
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{const v=document.querySelector('.meter .fill');if(v)v.style.width=v.dataset.w}));
+});
+
+// 其他 is graded by its follow-ups: 3 yes → 2 (an unlisted practice never earns 3), 2 yes → 1, otherwise 0; 不確定 counts as no
+function otherAnswer(q){
+  const misses=q.fu.filter((_,k)=>checked(`${q.id}_f${k}`)[0]!=="0");
+  const g=[0,0,1,2][q.fu.length-misses.length];
+  const n=misses.length?`追問中還沒做到或不確定的地方：<ul class="miss">${misses.map(([t,m])=>`<li>${m}</li>`).join("")}</ul>`:"三個關鍵點都有做到，方向是穩的；不在常見類型的做法，細節寫法仍要對照實際文件。";
+  const k=misses.length?`其他做法：還有 ${misses.length} 個關鍵點沒做到或不確定。`:"其他做法：三個關鍵點都有做到，方向是穩的。";
+  return {g,n,k};
+}
+// one answer per question: the lowest grade among everything chosen (multi-select and 其他 included)
+function answer(q){
+  const vals=checked(q.id),known=vals.filter(v=>v!=="x").map(Number);
+  const tier=TIER[sizeVal()];
+  const small=j=>q.id==="q9"?(j===1?tier===0:false):false;
+  const cands=known.map(j=>small(j)?{j,...Q9_SMALL,ov:{}}:{j,g:q.o[j][1],n:q.o[j][2],k:K[q.id][j],ov:q.o[j][3]||{}});
+  if(vals.includes("x"))cands.push({...otherAnswer(q),ov:{}});
+  const c=cands.reduce((a,b)=>b.g<a.g?b:a);
+  const l=[...known.map(k=>q.o[k][0]),...(vals.includes("x")?["其他做法"]:[])].join("、");
+  const give=q.id==="q9"?Q9_GIVE[tier]:q.give;
+  return {q,l,g:c.g,n:c.n,k:c.k,give:c.ov.give||give,why:c.ov.why||q.why};
+}
+
+// one-line key point per option (same order as q.o), shown before the full explanation
+const K={
+ q1:["自動記錄最容易做到逐日記到分鐘、保存 5 年。","回報制常見的破口，是紀錄和實際工時對不上。","紙本常只寫整點，勞檢會認定沒有記到分鐘。","沒有出勤紀錄，罰鍰從 9 萬元起。"],
+ q2:["加班費的時薪，常漏算伙食、職務等固定津貼。","薪資總括制可行，但要拆明金額、時數並定期結算。","沒拆出加班費，法院會用整筆月薪重算加班費。","有主管職稱不等於責任制，要書面約定並核備。"],
+ q3:["方向最穩，但「不是工作」的註記不能流於形式。","最安全但成本高，可以改用雙軌確認制。","打卡時間推定為工作時間，沒申請不等於沒加班。","紀錄和實際工時不符，員工一則訊息就能推翻。"],
+ q4:["例假不動、休息日加班照規定給薪。","變形工時有行業與程序限制，常見錯在行業不符。","例假那天上班，事後給加班費也補不回來。","例假不能累積補休，是臺北市第 2 常罰的項目。"],
+ q5:["有規則有紀錄，但「緊急」要定義清楚。","申報制要有核准紀錄和申報期限。","依指示回覆、改文件，就可能算工作時間。","沒有規則時，LINE 紀錄就是加班費的證據。"],
+ q6:["依實際遲到時間比例扣薪，勞動部函釋認可。","全勤條件要排除法律保護的假別。","扣超過遲到時間的部分，等於工資沒有付足。","有上班的時間被當成曠職扣薪。"],
+ q7:["由同仁自己排定，最符合法律原則。","可以協商統一休，關鍵是留下同意紀錄。","特休排定權在勞工，公司指定可能要付兩次。","沒休完要發工資，是臺北市第 9 常罰的項目。"],
+ q8:["PIP 要照公司自己的規則完整跑完。","爭議最少的方式，但協議書的寫法是關鍵。","付了資遣費，沒有法定事由一樣可能違法。","逼退反而讓同仁可以請求資遣費。"],
+ q9:["公開管道和處理流程都做到了。","10 人以上要有公開揭示的申訴管道。","霸凌常常就是主管本人，等於沒有管道。","新制已經上路，先從申訴管道開始。"]
+};
+// 給您的建議: first rule that matches the answers wins (wording to be reviewed in Notion)
+const ADVICE=[
+ [g=>g.q8===0,"資遣前，先補齊考核與改善紀錄。資遣費付得再足，沒有法定事由，解僱仍可能無效。"],
+ [g=>g.q1===0,"先把出勤紀錄建起來。這是勞檢第一個要看的文件，也是加班費爭議的起點。"],
+ [g=>Math.max(g.q2,g.q3)<=1,"加班費約定和加班申請制是同一件事的兩面，建議一起調整，一次補齊。"],
+ [g=>g.q4<=1,"旺季排班先確認例假有沒有排到。例假出勤是事後補不回來的違規。"],
+ [g=>g.q9<=1,["人數還不到 10 人，不用公開揭示申訴管道；先決定同仁被主管或老闆欺負時，可以找誰反映、由誰處理。","先公開一個申訴管道，並決定被申訴的是主管時由誰受理。","先把防治措施、申訴及懲處規範訂成書面並公開揭示，再決定被申訴的是主管時由誰受理。","除了申訴及懲處規範，100 人以上還要有書面的不法侵害預防計畫，建議兩份一起訂。"]],
+ [g=>g.q2<=1,"先把薪資單上的加班費拆清楚，這是勞檢和離職爭議最常見的起點。"],
+ [g=>g.q3<=1||g.q5<=1,"加班的認定看的是紀錄，不是申請單。建議補一套超時確認流程。"],
+ [g=>g.q6<=1||g.q7<=1,"遲到、特休這類規定都寫在工作規則裡，建議整份一起檢視。"],
+ [()=>true,"大方向都穩了，剩下的是條款寫法和紀錄保存，建議每年檢查一次。"]
+];
+function render(){
+  const ans=Q.map(answer);
+  const total=ans.reduce((s,a)=>s+a.g,0);
+  const idx=Math.round(total/(ans.length*3)*100);
+  const zeros=ans.filter(a=>a.g===0).length;
+  let li=LEVELS.findIndex(l=>idx>=l[0]);
+  if(zeros>=2)li=Math.max(li,2);
+  const lv=LEVELS[li];
+  const low=ans.filter(a=>a.g<=1),mid=ans.filter(a=>a.g===2),best=ans.filter(a=>a.g===3);
+  const byGrade=(a,b)=>a.g-b.g;
+  const first=(low.length?[...low].sort(byGrade):[...mid]).slice(0,3);
+  const firstTitle=low.length?`建議先處理的 ${first.length} 件事`:`還可以更穩的 ${first.length} 件事`;
+  const others=ans.filter(a=>!first.includes(a));
+  const grades=Object.fromEntries(ans.map(a=>[a.q.id,a.g]));
+  const size=sizeVal();
+  const adv=ADVICE.find(([test])=>test(grades))[1];
+  const advice=Array.isArray(adv)?adv[TIER[size]]:adv;
+  const sumLine=low.length?`9 題中，${best.length} 題做得相對穩健，${low.length} 題建議先處理。`:`9 題中，${best.length} 題做得相對穩健，沒有需要立即處理的項目。`;
+  const focus=[...low,...mid].map(a=>a.q.short);
+  const plan=low.length>=3?"常年法律顧問":"好雇制度健檢";
+  const sizeLine=size>=2?`依你們的人數（${SIZES[size]}），已經適用的規定逐項對照`:size===1?`依你們的人數（${SIZES[size]}），已經適用、即將適用的規定`:`依你們的人數（${SIZES[size]}），人數增加時會開始適用的規定`;
+  const shareTxt=`我們公司的好雇主指數是 ${idx}（${lv[1]}）。3 分鐘的好雇主自我檢核，你們也測測看：${SHARE_URL}`;
+  const lawLine=a=>`<p class="law">依據：${a.q.law}｜法定罰鍰 ${a.q.fine}｜${a.q.data}${/臺北市排名/.test(a.q.data)?`（<a href="${SRC_URL}" target="_blank" rel="noopener">臺北市勞動局公布名單</a>）`:""}</p>`;
+  // same words, new shape: 目標 split at ；。 into a ✓ list, 回頭檢視 split at ？ into □ questions, 建議留意 as a yellow note with 「」 terms bolded
+  const parts=(s,re)=>s.split(re).map(x=>x.trim()).filter(Boolean);
+  const goal=s=>`<div class="blk"><b>目標</b><ul class="chk">${parts(s,/[；。]/).map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+  const review=s=>`<div class="blk"><b>回頭檢視</b><ul class="qs">${parts(s,/？/).map(x=>`<li>${x}？</li>`).join("")}</ul></div>`;
+  const note=s=>`<div class="note"><b>建議留意</b><span>${s.replace(/「([^」]+)」/g,"<strong>「$1」</strong>")}</span></div>`;
+  const full=a=>`<p>${a.n}</p>${a.q.court?`<p class="court">法院怎麼看｜${a.q.court}</p>`:""}${goal(a.give)}${review(a.q.keep)}${note(a.why)}${a.g<=1?lawLine(a):""}`;
+  const todo=a=>`<li><span class="ttl">${a.q.short}</span><span class="did">你的做法：${a.l}</span><span class="tag t${a.g}">${GL[a.g]}</span><span class="key">${a.k}</span><details><summary>看完整說明</summary><div class="in">${full(a)}</div></details></li>`;
+  const row=a=>`<details class="row"><summary><span>${a.q.short}</span><span class="tag t${a.g}">${GL[a.g]}</span></summary><div class="in"><p class="keyline">${a.k}</p>${a.g===3?`<p><b>還可以注意</b>${a.q.tip}</p>`:full(a)}</div></details>`;
+  document.getElementById('out').innerHTML=`
+  <div class="rsum">
+    <span class="lvname">${lv[1]}</span>
+    <span class="idx">好雇主指數 <b>${idx}</b> / 100</span>
+    <p>${sumLine}</p>
+  </div>
+  <section class="rsec"><h3>一、${firstTitle}</h3><ol class="todo">${first.map(todo).join("")}</ol></section>
+  ${others.length?`<section class="rsec"><h3>二、其他 ${others.length} 題</h3><div class="rows">${others.map(row).join("")}</div></section>`:""}
+  <div class="advice"><span class="who">給您的建議</span><p>${advice}</p></div>
+  <div class="cta" id="report">
+    <strong class="ctat">完整報告會告訴你，每一項要怎麼改、先改哪一項。</strong>
+    <ul>
+      <li>${focus.length?`${focus.join("、")}的判決解說與具體做法`:"每一題「還可以注意」的完整說明"}</li>
+      <li>${sizeLine}</li>
+      <li>適合你們的方案與報價（${plan}）</li>
+    </ul>
+    <form class="lead" id="lead" novalidate>
+      <label>公司名稱<input id="co" required autocomplete="organization"></label>
+      <label>您的稱呼<input id="who" required autocomplete="name"></label>
+      <label>公司 Email<input id="mail" type="email" required autocomplete="email" placeholder="hr@example.com"></label>
+      <label>電話（選填）<input id="tel" type="tel" autocomplete="tel"></label>
+      <input id="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0">
+      <button class="btn primary" type="submit">取得完整報告 →</button>
+      <span class="small" id="leadmsg" aria-live="polite">只用來寄送報告，不會把作答內容提供給第三方。</span>
+    </form>
+  </div>
+  <p class="fireline">已經收到勞檢通知、員工申訴，或正準備資遣同仁？<a href="${BOOK}" target="_blank" rel="noopener">預約律師諮詢</a>・<a href="${LINE}" target="_blank" rel="noopener">LINE 詢問</a></p>
+  <details class="row sharebox"><summary><span>傳給老闆或同業</span></summary><div class="in">
+    <label class="small" for="sharetxt">只會傳出好雇主指數，不包含各題的做法。</label>
+    <textarea id="sharetxt" rows="2" readonly>${shareTxt}</textarea>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><button class="btn ghost" type="button" id="copy">複製文字</button><span class="small" id="copied" aria-live="polite"></span></div>
+  </div></details>
+  <div class="rfoot"><button class="btn ghost" type="button" id="again">重新作答</button><p class="small">本檢核依法條、判決與政府公開資料整理，不是法律意見；實際情況要看個案事實。</p></div>`;
+  document.getElementById('copy').addEventListener('click',()=>{const ta=document.getElementById('sharetxt');const ok=()=>document.getElementById('copied').textContent="已複製";const sel=()=>{ta.select();document.getElementById('copied').textContent="已選取，請按複製"};
+    try{navigator.clipboard.writeText(ta.value).then(ok,sel)}catch(e){sel()}});
+  document.getElementById('lead').addEventListener('submit',async e=>{
+    e.preventDefault();
+    const form=e.target,msg=document.getElementById('leadmsg'),mail=document.getElementById('mail');
+    const empty=["co","who","mail"].find(id=>!document.getElementById(id).value.trim());
+    if(empty){msg.textContent="請填寫公司名稱、稱呼與 Email。";document.getElementById(empty).focus();return}
+    if(!mail.checkValidity()){msg.textContent="Email 格式看起來不太對，請再確認。";mail.focus();return}
+    const btn=form.querySelector('button[type=submit]');btn.disabled=true;msg.textContent="送出中…";
+    const v=id=>document.getElementById(id).value.trim();
+    const payload={company:v('co'),name:v('who'),email:v('mail'),phone:v('tel'),website:v('hp'),
+      headcount:SIZES[size],index:String(idx),level:lv[1],
+      grades:ans.map(a=>a.q.id+":"+a.g).join(","),
+      answers:ans.map(a=>a.q.short+"＝"+a.l+"（"+GL[a.g]+"）").join("；"),
+      focus:focus.join("、"),plan:plan,page:location.href};
+    try{
+      const r=await fetch(LEAD_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+      let j=null;try{j=await r.json()}catch(x){}
+      if(!r.ok)throw new Error((j?j.message:"")||String(r.status));
+      if(!j||!j.ok)throw new Error("bad");
+      const to=document.createElement('b');to.textContent=v('mail');
+      form.innerHTML='<p class="small" style="font-size:16px;line-height:1.7"><b>已收到，謝謝！</b><br>我們會在 1 個工作天內把整理好的建議寄到 '+to.outerHTML+'。先有具體問題的話，也可以直接預約律師諮詢或 LINE 我們。</p>';
+    }catch(err){
+      btn.disabled=false;msg.textContent="送出沒有成功，請再試一次；或直接 LINE 我們，我們幫您登記。";
+    }
+  });
+  document.getElementById('again').addEventListener('click',()=>{
+    f.reset();showSizeCard();showPage(0);f.querySelectorAll('.q.miss').forEach(w=>w.classList.remove('miss'));Q.filter(q=>q.fu).forEach(q=>{document.getElementById(q.id+'_fu').hidden=true});updateProgress();
+    document.getElementById('resultPanel').hidden=true;document.getElementById('quiz').hidden=false;
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+}
+updateProgress();
+</script>
+
+</body>
+</html>
